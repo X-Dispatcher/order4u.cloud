@@ -16,11 +16,16 @@
     <nav class="nav container">
       <a href="#home" class="brand">Order4U <span>Cloud</span></a>
       <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#services" data-i18n="nav.services">Services</a></li>
+        <li><a href="#products" data-i18n="nav.products">Products</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
+      <fieldset class="lang-switch">
+        <legend class="sr-only">Language switch</legend>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="ms">BM</button>
+      </fieldset>
     </nav>
   </header>
 
@@ -28,25 +33,25 @@
     <!-- Services -->
     <section id="services" class="section">
       <div class="container">
-        <h2 class="section-title">AI-Native Software & Integration Services</h2>
-        <p class="section-sub">We're not just a system integrator — we're an AI-native software company with in-house custom development.</p>
+        <h2 class="section-title" data-i18n="services.title">AI-Native Software & Integration Services</h2>
+        <p class="section-sub" data-i18n="services.sub">We're not just a system integrator — we're an AI-native software company with in-house custom development.</p>
 
         <div class="card-grid card-grid-4">
           <div class="mini-card">
-            <h4>In-House Custom Development</h4>
-            <p>Full product teams building bespoke software for your business, end to end.</p>
+            <h4 data-i18n="services.card1.title">In-House Custom Development</h4>
+            <p data-i18n="services.card1.desc">Full product teams building bespoke software for your business, end to end.</p>
           </div>
           <div class="mini-card">
-            <h4>AI-Native Engineering</h4>
-            <p>AI-assisted development and AI-powered features built into every system we ship.</p>
+            <h4 data-i18n="services.card2.title">AI-Native Engineering</h4>
+            <p data-i18n="services.card2.desc">AI-assisted development and AI-powered features built into every system we ship.</p>
           </div>
           <div class="mini-card">
-            <h4>System Integration</h4>
-            <p>Connecting your existing tools, devices and third-party platforms together.</p>
+            <h4 data-i18n="services.card3.title">System Integration</h4>
+            <p data-i18n="services.card3.desc">Connecting your existing tools, devices and third-party platforms together.</p>
           </div>
           <div class="mini-card">
-            <h4>Cloud Deployment</h4>
-            <p>Hosting, scaling and maintaining your applications in the cloud.</p>
+            <h4 data-i18n="services.card4.title">Cloud Deployment</h4>
+            <p data-i18n="services.card4.desc">Hosting, scaling and maintaining your applications in the cloud.</p>
           </div>
         </div>
       </div>
@@ -55,15 +60,15 @@
     <!-- Hero -->
     <section id="home" class="hero">
       <div class="container hero-content">
-        <span class="badge">📍 Sarawak, Malaysia · AI-Native Software Company</span>
-        <h1>Smarter Warehouse & Delivery Management for Distribution Businesses</h1>
-        <p class="hero-sub">
+        <span class="badge" data-i18n="hero.badge">📍 Sarawak, Malaysia · AI-Native Software Company</span>
+        <h1 data-i18n="hero.title">Smarter Warehouse & Delivery Management for Distribution Businesses</h1>
+        <p class="hero-sub" data-i18n="hero.sub">
           We build cloud-based systems that help distributors — from seafood to general goods —
           manage inventory, orders and deliveries in real time, powered by AI-native engineering.
         </p>
         <div class="hero-actions">
-          <a href="https://wms.order4u.cloud" class="btn btn-primary" target="_blank" rel="noopener">Explore WMS</a>
-          <a href="https://lms.order4u.cloud" class="btn btn-outline" target="_blank" rel="noopener">Explore LMS</a>
+          <a href="https://wms.order4u.cloud" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="hero.cta.wms">Explore WMS</a>
+          <a href="https://lms.order4u.cloud" class="btn btn-outline" target="_blank" rel="noopener" data-i18n="hero.cta.lms">Explore LMS</a>
         </div>
       </div>
     </section>
@@ -71,34 +76,34 @@
     <!-- Products -->
     <section id="products" class="section">
       <div class="container">
-        <h2 class="section-title">Our Products</h2>
-        <p class="section-sub">Two core systems, built to work together.</p>
+        <h2 class="section-title" data-i18n="products.title">Our Products</h2>
+        <p class="section-sub" data-i18n="products.sub">Two core systems, built to work together.</p>
 
         <div class="card-grid">
           <article class="card">
             <div class="card-icon">📦</div>
-            <h3>Warehouse Management System</h3>
+            <h3 data-i18n="products.wms.title">Warehouse Management System</h3>
             <p class="card-tag">wms.order4u.cloud</p>
             <ul class="feature-list">
-              <li>Real-time stock across warehouses & bins</li>
-              <li>Batch & expiry tracking</li>
-              <li>Receiving, put-away, picking & packing</li>
-              <li>Low-stock & near-expiry alerts</li>
+              <li data-i18n="products.wms.f1">Real-time stock across warehouses & bins</li>
+              <li data-i18n="products.wms.f2">Batch & expiry tracking</li>
+              <li data-i18n="products.wms.f3">Receiving, put-away, picking & packing</li>
+              <li data-i18n="products.wms.f4">Low-stock & near-expiry alerts</li>
             </ul>
-            <a href="https://wms.order4u.cloud" class="card-link" target="_blank" rel="noopener">Visit WMS →</a>
+            <a href="https://wms.order4u.cloud" class="card-link" target="_blank" rel="noopener" data-i18n="products.wms.link">Visit WMS →</a>
           </article>
 
           <article class="card">
             <div class="card-icon">🚚</div>
-            <h3>Logistics Management System</h3>
+            <h3 data-i18n="products.lms.title">Logistics Management System</h3>
             <p class="card-tag">lms.order4u.cloud</p>
             <ul class="feature-list">
-              <li>Delivery scheduling & route planning</li>
-              <li>Driver & vehicle assignment</li>
-              <li>Electronic proof of delivery (ePOD)</li>
-              <li>Live, Shopee-style delivery tracking</li>
+              <li data-i18n="products.lms.f1">Delivery scheduling & route planning</li>
+              <li data-i18n="products.lms.f2">Driver & vehicle assignment</li>
+              <li data-i18n="products.lms.f3">Electronic proof of delivery (ePOD)</li>
+              <li data-i18n="products.lms.f4">Live, Shopee-style delivery tracking</li>
             </ul>
-            <a href="https://lms.order4u.cloud" class="card-link" target="_blank" rel="noopener">Visit LMS →</a>
+            <a href="https://lms.order4u.cloud" class="card-link" target="_blank" rel="noopener" data-i18n="products.lms.link">Visit LMS →</a>
           </article>
         </div>
       </div>
@@ -107,8 +112,8 @@
     <!-- About -->
     <section id="about" class="section">
       <div class="container about-content">
-        <h2 class="section-title">About Us</h2>
-        <p>
+        <h2 class="section-title" data-i18n="about.title">About Us</h2>
+        <p data-i18n="about.text">
           Order4U Cloud is an AI-native software company based in Sarawak, Malaysia. We design and
           build warehouse and logistics management systems with our in-house development team, and
           also work as a system integrator — helping businesses digitise their operations end to end.
@@ -119,8 +124,8 @@
     <!-- Contact -->
     <section id="contact" class="section section-alt contact-section">
       <div class="container">
-        <h2 class="section-title">Let's Talk</h2>
-        <p class="section-sub">Interested in our products or need a system built for your business?</p>
+        <h2 class="section-title" data-i18n="contact.title">Let's Talk</h2>
+        <p class="section-sub" data-i18n="contact.sub">Interested in our products or need a system built for your business?</p>
         <a href="mailto:hello@order4u.cloud" class="btn btn-primary">hello@order4u.cloud</a>
       </div>
     </section>
@@ -128,14 +133,15 @@
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>© 2026 Order4U Cloud · Sarawak, Malaysia</p>
+      <p data-i18n="footer.copy">© 2026 Order4U Cloud · Sarawak, Malaysia</p>
       <div class="footer-links">
         <a href="https://wms.order4u.cloud" target="_blank" rel="noopener">WMS</a>
         <a href="https://lms.order4u.cloud" target="_blank" rel="noopener">LMS</a>
-        <a href="mailto:hello@order4u.cloud">Contact</a>
+        <a href="mailto:hello@order4u.cloud" data-i18n="nav.contact">Contact</a>
       </div>
     </div>
   </footer>
 
+  <script src="assets/js/i18n.js"></script>
 </body>
 </html>
