@@ -18,7 +18,7 @@
       <ul class="nav-links">
         <li><a href="#services" data-i18n="nav.services">Services</a></li>
         <li><a href="#products" data-i18n="nav.products">Products</a></li>
-        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
         <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <fieldset class="lang-switch">
@@ -30,8 +30,54 @@
   </header>
 
   <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <span class="badge" data-i18n="hero.badge">📍 Sarawak, Malaysia · AI-Native Software Company</span>
+        <h1 data-i18n="hero.title">Smarter Warehouse & Delivery Management for Distribution Businesses</h1>
+        <p class="hero-sub" data-i18n="hero.sub">
+          We build cloud-based systems that help distributors — from seafood to general goods —
+          manage inventory, orders and deliveries in real time, powered by AI-native engineering.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-lg" data-i18n="hero.cta.demo">Request a Demo</a>
+        </div>
+        <div class="hero-links">
+          <a href="https://wms.order4u.cloud" target="_blank" rel="noopener" data-i18n="hero.cta.wms">Explore WMS →</a>
+          <a href="https://lms.order4u.cloud" target="_blank" rel="noopener" data-i18n="hero.cta.lms">Explore LMS →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries / trust strip -->
+    <section id="industries" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="industries.title">Built for Distribution Businesses Like Yours</h2>
+        <p class="section-sub" data-i18n="industries.sub">From fresh seafood to general goods, our systems adapt to how you operate.</p>
+
+        <div class="industry-grid">
+          <div class="industry-item">
+            <span class="industry-icon">🐟</span>
+            <p data-i18n="industries.item1">Seafood & Fresh Produce</p>
+          </div>
+          <div class="industry-item">
+            <span class="industry-icon">🍽️</span>
+            <p data-i18n="industries.item2">F&B Distribution</p>
+          </div>
+          <div class="industry-item">
+            <span class="industry-icon">🏬</span>
+            <p data-i18n="industries.item3">Retail & Wholesale</p>
+          </div>
+          <div class="industry-item">
+            <span class="industry-icon">📦</span>
+            <p data-i18n="industries.item4">General Distribution</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Services -->
-    <section id="services" class="section">
+    <section id="services" class="section section-alt">
       <div class="container">
         <h2 class="section-title" data-i18n="services.title">AI-Native Software & Integration Services</h2>
         <p class="section-sub" data-i18n="services.sub">We're not just a system integrator — we're an AI-native software company with in-house custom development.</p>
@@ -57,24 +103,39 @@
       </div>
     </section>
 
-    <!-- Hero -->
-    <section id="home" class="hero">
-      <div class="container hero-content">
-        <span class="badge" data-i18n="hero.badge">📍 Sarawak, Malaysia · AI-Native Software Company</span>
-        <h1 data-i18n="hero.title">Smarter Warehouse & Delivery Management for Distribution Businesses</h1>
-        <p class="hero-sub" data-i18n="hero.sub">
-          We build cloud-based systems that help distributors — from seafood to general goods —
-          manage inventory, orders and deliveries in real time, powered by AI-native engineering.
-        </p>
-        <div class="hero-actions">
-          <a href="https://wms.order4u.cloud" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="hero.cta.wms">Explore WMS</a>
-          <a href="https://lms.order4u.cloud" class="btn btn-outline" target="_blank" rel="noopener" data-i18n="hero.cta.lms">Explore LMS</a>
+    <!-- AI capabilities -->
+    <section id="ai" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="ai.title">AI That Works for Your Operations</h2>
+        <p class="section-sub" data-i18n="ai.sub">"AI-native" isn't a buzzword — here's how it helps day to day.</p>
+
+        <div class="card-grid card-grid-4">
+          <div class="mini-card">
+            <span class="tag tag-live" data-i18n="ai.tag.live">Available now</span>
+            <h4 data-i18n="ai.card1.title">Smart Stock Alerts</h4>
+            <p data-i18n="ai.card1.desc">Automatic low-stock and near-expiry alerts so nothing is missed.</p>
+          </div>
+          <div class="mini-card">
+            <span class="tag tag-soon" data-i18n="ai.tag.soon">On our roadmap</span>
+            <h4 data-i18n="ai.card2.title">AI Product Imagery</h4>
+            <p data-i18n="ai.card2.desc">Auto-generate product images from a name and description, saving content time.</p>
+          </div>
+          <div class="mini-card">
+            <span class="tag tag-soon" data-i18n="ai.tag.soon">On our roadmap</span>
+            <h4 data-i18n="ai.card3.title">Demand Forecasting</h4>
+            <p data-i18n="ai.card3.desc">Predict demand from order history to reduce stock-outs and over-buying.</p>
+          </div>
+          <div class="mini-card">
+            <span class="tag tag-soon" data-i18n="ai.tag.soon">On our roadmap</span>
+            <h4 data-i18n="ai.card4.title">Route Optimisation</h4>
+            <p data-i18n="ai.card4.desc">ML-based delivery route planning to cut driver time and fuel costs.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Products -->
-    <section id="products" class="section">
+    <section id="products" class="section section-alt">
       <div class="container">
         <h2 class="section-title" data-i18n="products.title">Our Products</h2>
         <p class="section-sub" data-i18n="products.sub">Two core systems, built to work together.</p>
@@ -90,7 +151,10 @@
               <li data-i18n="products.wms.f3">Receiving, put-away, picking & packing</li>
               <li data-i18n="products.wms.f4">Low-stock & near-expiry alerts</li>
             </ul>
-            <a href="https://wms.order4u.cloud" class="card-link" target="_blank" rel="noopener" data-i18n="products.wms.link">Visit WMS →</a>
+            <div class="card-link-row">
+              <a href="https://wms.order4u.cloud" class="card-link" target="_blank" rel="noopener" data-i18n="products.wms.link">Visit WMS →</a>
+              <a href="wms.html" class="card-link card-link-muted" data-i18n="products.wms.learn">Learn more</a>
+            </div>
           </article>
 
           <article class="card">
@@ -103,7 +167,10 @@
               <li data-i18n="products.lms.f3">Electronic proof of delivery (ePOD)</li>
               <li data-i18n="products.lms.f4">Live, Shopee-style delivery tracking</li>
             </ul>
-            <a href="https://lms.order4u.cloud" class="card-link" target="_blank" rel="noopener" data-i18n="products.lms.link">Visit LMS →</a>
+            <div class="card-link-row">
+              <a href="https://lms.order4u.cloud" class="card-link" target="_blank" rel="noopener" data-i18n="products.lms.link">Visit LMS →</a>
+              <a href="lms.html" class="card-link card-link-muted" data-i18n="products.lms.learn">Learn more</a>
+            </div>
           </article>
         </div>
       </div>
@@ -121,12 +188,63 @@
       </div>
     </section>
 
+    <!-- FAQ -->
+    <section id="faq" class="section section-alt">
+      <div class="container faq-content">
+        <h2 class="section-title" data-i18n="faq.title">Frequently Asked Questions</h2>
+        <p class="section-sub" data-i18n="faq.sub">A few things prospects usually ask us.</p>
+
+        <details class="faq-item">
+          <summary data-i18n="faq.q1">How long does implementation take?</summary>
+          <p data-i18n="faq.a1">Timeline depends on your business size and data complexity — we scope a clear plan together during your consultation.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q2">Can staff use it without constant internet access?</summary>
+          <p data-i18n="faq.a2">Our apps are designed mobile-first for warehouse and driver use. If you have specific offline requirements, we'll scope them with you.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q3">What hardware do we need?</summary>
+          <p data-i18n="faq.a3">Standard barcode scanners and thermal label printers are supported — we advise on compatible hardware during setup.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q4">Do you provide training and support?</summary>
+          <p data-i18n="faq.a4">Yes — onboarding includes staff training, with ongoing support available after go-live.</p>
+        </details>
+      </div>
+    </section>
+
     <!-- Contact -->
-    <section id="contact" class="section section-alt contact-section">
+    <section id="contact" class="section contact-section">
       <div class="container">
         <h2 class="section-title" data-i18n="contact.title">Let's Talk</h2>
         <p class="section-sub" data-i18n="contact.sub">Interested in our products or need a system built for your business?</p>
-        <a href="mailto:hello@order4u.cloud" class="btn btn-primary">hello@order4u.cloud</a>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <label class="sr-only" for="contact-name" data-i18n="contact.form.name">Your name</label>
+            <input id="contact-name" type="text" name="name" data-i18n-placeholder="contact.form.name" placeholder="Your name" required />
+            <label class="sr-only" for="contact-company" data-i18n="contact.form.company">Company name</label>
+            <input id="contact-company" type="text" name="company" data-i18n-placeholder="contact.form.company" placeholder="Company name" />
+          </div>
+          <div class="form-row">
+            <label class="sr-only" for="contact-industry" data-i18n="contact.form.industry">Industry (optional)</label>
+            <select id="contact-industry" name="industry">
+              <option value="" data-i18n="contact.form.industry">Industry (optional)</option>
+              <option data-i18n="industries.item1">Seafood & Fresh Produce</option>
+              <option data-i18n="industries.item2">F&B Distribution</option>
+              <option data-i18n="industries.item3">Retail & Wholesale</option>
+              <option data-i18n="industries.item4">General Distribution</option>
+            </select>
+            <label class="sr-only" for="contact-phone" data-i18n="contact.form.phone">Phone number</label>
+            <input id="contact-phone" type="tel" name="phone" data-i18n-placeholder="contact.form.phone" placeholder="Phone number" />
+          </div>
+          <label class="sr-only" for="contact-message" data-i18n="contact.form.message">Tell us about your business needs</label>
+          <textarea id="contact-message" name="message" rows="4" data-i18n-placeholder="contact.form.message" placeholder="Tell us about your business needs" required></textarea>
+          <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Send Inquiry</button>
+        </form>
+        <p class="form-note" data-i18n="contact.form.note">
+          Or email us directly at <a href="mailto:hello@order4u.cloud">hello@order4u.cloud</a>
+        </p>
       </div>
     </section>
   </main>
@@ -143,5 +261,6 @@
   </footer>
 
   <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/contact.js"></script>
 </body>
 </html>
