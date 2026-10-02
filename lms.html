@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:; connect-src 'none'; base-uri 'self'; form-action 'none'; object-src 'none';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Logistics Management System (LMS) — Order4U Cloud</title>
   <meta name="description" content="Order4U LMS: delivery scheduling, route planning, ePOD and live Shopee-style delivery tracking for distribution businesses." />
   <link rel="icon" href="data:,">
@@ -16,11 +18,17 @@
     <nav class="nav container">
       <a href="index.html" class="brand">Order4U <span>Cloud</span></a>
       <ul class="nav-links">
-        <li><a href="index.html#services">Services</a></li>
-        <li><a href="index.html#products">Products</a></li>
-        <li><a href="index.html#faq">FAQ</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
+        <li><a href="index.html#products" data-i18n="nav.products">Products</a></li>
+        <li><a href="index.html#faq" data-i18n="nav.faq">FAQ</a></li>
+        <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
+      <fieldset class="lang-switch">
+        <legend class="sr-only">Language switch</legend>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="ms">BM</button>
+        <button type="button" class="lang-btn" data-lang="zh">ZH</button>
+      </fieldset>
     </nav>
   </header>
 
@@ -28,57 +36,57 @@
     <section class="section">
       <div class="container">
         <p class="card-tag">lms.order4u.cloud</p>
-        <h1 class="section-title" style="text-align:left;">Logistics Management System</h1>
-        <p class="section-sub" style="text-align:left; margin-bottom:40px;">
+        <h1 class="section-title text-left" data-i18n="products.lms.title">Logistics Management System</h1>
+        <p class="section-sub section-sub-detail" data-i18n="lms.intro.sub">
           Delivery planning, execution and live tracking — including home delivery and
           self-collection points.
         </p>
 
         <div class="card-grid">
           <article class="card">
-            <h3>Delivery Planning</h3>
+            <h3 data-i18n="lms.planning.title">Delivery Planning</h3>
             <ul class="feature-list">
-              <li>Daily delivery schedules</li>
-              <li>Route planning, grouped by area</li>
-              <li>Vehicle assignment to manifest</li>
-              <li>Driver assignment to manifest</li>
+              <li data-i18n="lms.planning.f1">Daily delivery schedules</li>
+              <li data-i18n="lms.planning.f2">Route planning, grouped by area</li>
+              <li data-i18n="lms.planning.f3">Vehicle assignment to manifest</li>
+              <li data-i18n="lms.planning.f4">Driver assignment to manifest</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Delivery Execution</h3>
+            <h3 data-i18n="lms.execution.title">Delivery Execution</h3>
             <ul class="feature-list">
-              <li>Digital delivery manifest — stops and items</li>
-              <li>Live GPS location shared by driver app</li>
-              <li>Customer signature capture</li>
-              <li>Delivery photo evidence</li>
-              <li>Electronic proof of delivery (ePOD) per stop</li>
+              <li data-i18n="lms.execution.f1">Digital delivery manifest — stops and items</li>
+              <li data-i18n="lms.execution.f2">Live GPS location shared by driver app</li>
+              <li data-i18n="lms.execution.f3">Customer signature capture</li>
+              <li data-i18n="lms.execution.f4">Delivery photo evidence</li>
+              <li data-i18n="lms.execution.f5">Electronic proof of delivery (ePOD) per stop</li>
             </ul>
           </article>
         </div>
 
-        <div class="card" style="margin-top:24px;">
-          <h3>Shopee-Style Delivery Status</h3>
+        <div class="card card-mt">
+          <h3 data-i18n="lms.shopee.title">Shopee-Style Delivery Status</h3>
           <ul class="feature-list">
-            <li><strong>Pending</strong> — order confirmed, awaiting packing</li>
-            <li><strong>Packed</strong> — ready for dispatch</li>
-            <li><strong>Out for delivery</strong> — live map tracking active</li>
-            <li><strong>Delivered</strong> — all items delivered</li>
-            <li><strong>Failed</strong> — delivery attempt failed</li>
+            <li data-i18n="lms.shopee.f1"><strong>Pending</strong> — order confirmed, awaiting packing</li>
+            <li data-i18n="lms.shopee.f2"><strong>Packed</strong> — ready for dispatch</li>
+            <li data-i18n="lms.shopee.f3"><strong>Out for delivery</strong> — live map tracking active</li>
+            <li data-i18n="lms.shopee.f4"><strong>Delivered</strong> — all items delivered</li>
+            <li data-i18n="lms.shopee.f5"><strong>Failed</strong> — delivery attempt failed</li>
           </ul>
         </div>
 
-        <div class="card" style="margin-top:24px;">
-          <h3>Delivery Options</h3>
-          <p style="color:var(--muted);">
+        <div class="card card-mt">
+          <h3 data-i18n="lms.options.title">Delivery Options</h3>
+          <p class="text-muted" data-i18n="lms.options.desc">
             Supports both home delivery to a customer address and self-collection from
             configured pickup points, with distance-based sorting at checkout.
           </p>
         </div>
 
-        <div class="hero-actions" style="margin-top:40px;">
-          <a href="https://lms.order4u.cloud" class="btn btn-primary" target="_blank" rel="noopener">Open LMS →</a>
-          <a href="index.html#contact" class="btn btn-outline">Request Pricing</a>
+        <div class="hero-actions hero-actions-mt">
+          <a href="https://lms.order4u.cloud" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="lms.cta.open">Open LMS →</a>
+          <a href="index.html#contact" class="btn btn-outline" data-i18n="lms.cta.pricing">Request Pricing</a>
         </div>
       </div>
     </section>
@@ -86,14 +94,15 @@
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>© 2026 Order4U Cloud · Sarawak, Malaysia</p>
+      <p data-i18n="footer.copy">© 2026 Order4U Cloud · Sarawak, Malaysia</p>
       <div class="footer-links">
         <a href="https://wms.order4u.cloud" target="_blank" rel="noopener">WMS</a>
         <a href="https://lms.order4u.cloud" target="_blank" rel="noopener">LMS</a>
-        <a href="mailto:hello@order4u.cloud">Contact</a>
+        <a href="mailto:hello@order4u.cloud" data-i18n="nav.contact">Contact</a>
       </div>
     </div>
   </footer>
 
+  <script src="assets/js/i18n.js"></script>
 </body>
 </html>
